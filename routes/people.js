@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const query = require('./db/query')
+const query = require('../db/query')
 
 // read
-router.get('/people', (req, res) => {
+router.get('/', (req, res) => {
   query.getPeople()
     .then((people) => {
       res.json(people)

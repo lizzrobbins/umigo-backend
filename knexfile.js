@@ -5,7 +5,10 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/umigo-data'
+    connection: {
+      host: 'localhost',
+      database: 'umigo-data'
+    }
   },
   production: {
     client: 'pg',
