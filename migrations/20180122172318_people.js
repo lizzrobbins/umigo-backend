@@ -22,7 +22,7 @@ exports.up = function(knex, Promise) {
     table.text('gender_connection')
     table.text('location')
     table.text('bio')
-    table.text('photos')
+    table.text('photo1')
   })
 };
 

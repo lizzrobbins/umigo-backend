@@ -20,7 +20,8 @@ exports.seed = function(knex, Promise) {
         age: 28,
         gender: 'female',
         location: 'Denver',
-        bio: 'words go here'
+        bio: 'words go here',
+        photo1: 'lizz1.jpg'
       }, {
         username: 'jrobbins',
         password: 'asdf',
@@ -29,7 +30,8 @@ exports.seed = function(knex, Promise) {
         age: 24,
         gender: 'male',
         location: 'Denver',
-        bio: 'yay words!'
+        bio: 'yay words!',
+        photo1: 'jake1.jpg'
       }, {
         username: 'kgibson',
         password: 'asdf',
@@ -38,7 +40,8 @@ exports.seed = function(knex, Promise) {
         age: 25,
         gender: 'male',
         location: 'Denver',
-        bio: 'words go here too'
+        bio: 'words go here too',
+        photo1: 'kyle1.jpg'
       }, {
         username: 'aklein',
         password: 'asdf',
@@ -47,7 +50,8 @@ exports.seed = function(knex, Promise) {
         age: 24,
         gender: 'female',
         location: 'Denver',
-        bio: 'More words here'
+        bio: 'More words here',
+        photo1: 'anna1.jpg'
       }]
       return knex('people').insert(people)
     });
