@@ -1,5 +1,9 @@
 const db = require('./knex')
 
+function verifyLogin(data){
+  return db('people').where({username: data.username, password: data.password});
+}
+
 function getPeople(){
   return db('people').select()
 }
@@ -10,5 +14,6 @@ function getPeopleById(id){
 
 module.exports = {
   getPeople,
-  getPeopleById
+  getPeopleById,
+  verifyLogin,
 }
